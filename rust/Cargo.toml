@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "core-utils/async-utils",
+    "core-utils/data-types",
+    "core-utils/error-handling",
+    "examples/websocket-server",
+    "examples/data-processor",
+    "examples/api-gateway",
+]
+
+[workspace.dependencies]
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+async-trait = "0.1"
